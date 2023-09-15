@@ -20,11 +20,10 @@ timezone: Australia/Melbourne
 
 title: Harsh Overseer # the main title
 
-tagline: Hey! My name is Harsh (you say it like "Hersh"). Nice to meet you.
+tagline: The obstacle is the way.
 
 description: >- # used by seo meta and the atom feed
-  I am an engineering and people leader with a background in building good mobile apps, based out of Melbourne, Australia.
-  If you want to know more about 
+
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://embry.io"
