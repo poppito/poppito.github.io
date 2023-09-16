@@ -9,8 +9,10 @@ import video from './images/billing/strayamate-demo.webm';
 import in_app_products from './images/billing/in-app-products.png';
 import add_product from './images/billing/add-product.png';
 
+//[previously](/2017-12-09-App-monetisation-and-In-App-Billing-implementation.md) 
+
 # A continuation.
-I wrote a post about In-App Billing in Android [previously](2017-12-09-App-monetisation-and-In-App-Billing-implementation) - this is really just an update to that original post. Before we start (again) though - lets get the semantics out of the way: the API is called In-App Billing however, whenever you sell a product leveraging this API, its an In-App product (IAP).
+I wrote a post about In-App Billing in Android - this is really just an update to that original post. Before we start (again) though - lets get the semantics out of the way: the API is called In-App Billing however, whenever you sell a product leveraging this API, its an In-App product (IAP).
 
 # First things first.
 

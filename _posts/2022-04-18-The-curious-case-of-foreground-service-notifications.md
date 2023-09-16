@@ -5,8 +5,6 @@ date: 2022-04-18 10:30 +1100
 categories: 'blog'
 ---
 
-import notifications from './images/copy_pasta.webm';
-
 # The curious case of Foreground service notifications
 
 Ok, let's start with looking at some history.
@@ -167,15 +165,16 @@ Let's find out by creating a sample app that does this.
     </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
+### Ok, now for the big reveal
 
-<div align="center">
-<h3> Ok, now for the big reveal</h3>
-<video width="30%" controls autostart autoPlay src={ notifications } type="video/mp4" />
+<p align="center">
+<video width="320" autoplay loop muted>
+  <source src="/images/copy_pasta.webm" type="video/webm">
+</video>
+</p>
 
-__That's right. For foreground services, if the user stops showing notifications, this just stops the service from posting notifications! However, the 
-service and its processing still seems to be working as normal__
+That's right. For foreground services, if the user stops showing notifications, this just stops the service from posting notifications! However, the 
+service and its processing still seems to be working as normal
 
 
 <img src="https://media.giphy.com/media/aLdiZJmmx4OVW/giphy.gif" />
-
-</div>

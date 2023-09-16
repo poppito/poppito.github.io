@@ -5,14 +5,6 @@ date:   2017-11-17 19:30 +1100
 categories: "blog"
 ---
 
-// import play_games_app from './images/play-games/play-games-app.png';
-// import add_game from './images/play-games/add-new-game.png';
-// import category from './images/play-games/add-game-choose-category.png';
-// import leaderboards from './images/play-games/configure-leaderboards.png';
-// import achievements from './images/play-games/configure-achievements.png';
-// import sign_in from './images/play-games/alert-to-sign-in.png';
-
-
 # Google play games API for fun and profit - but mostly only fun.
 
 # The motivation
@@ -35,27 +27,19 @@ Achievements: Think of these as a level up for a user. As a user progresses in a
 
 To explain it simply, it is a framework that utilises [Google Play Games](https://play.google.com/store/apps/details?id=com.google.android.play.games&hl=en) in Android. Users can create a Games Profile - an account that persists and saves their games data. It also introduces a social aspect wherein, users can add other users as friends. Games generally need to implement a points system i.e. a "unit" they award a user for carrying out a particular action successfully. This is the metric a game developer can use to place users a Leaderboard. It is also the same metric that can be used to level users up when they reach and progress through amounts of it, assigned to them.
 
-![Play games]("/images/play-games/play-games-app.png")
 # That's enough theory, how do I implement it?!
 
 You start with creating a Game on Google play developer console. After signing in, go to Games Services.
 
-<p align="center">
-<img src={ play_games_app } width="30%" />
-</p>
-
+![Play games](/images/play-games/play-games-app.png)
 
 Click on "ADD NEW GAME", followed by selecting "I don't use any Google APIs in my game yet". Note, that here Games services creates an "app_id", which we will later use.
 
-<p align="center">
-<img src= { add_game } width="30%" />
-</p>
+![Add game](/images/play-games/add-new-game.png)
 
 Give your game a name, for example Slangman in my case and then choose a category - for example - Slangman is in the Educational category.
 
-<p align="center">
-<img src= { category } width="30%" />
-</p>
+![Category](/images/play-games/add-game-choose-category.png)
 
 Select Android.
 
@@ -89,15 +73,11 @@ dependencies {
 
 Configuring Leaderboards is easy. Basically, you need to implemement a "points" metric - something you reward the user when they carry a certain action. Then determine appropriate times in the user's gaming lifecycle to call the Leaderboards API and post the user's current points. That's it! To add a leaderboard, in the Play Console, under Games Services, just click on "Add a Leaderboard", give it a name for example. World Rankings, and then determine if larger points or smaller points is better. You can also define a limit i.e. not to award points above a certain limit. Note, every Leaderboard creates a leaderboard_id String. This needs to be added as a @StringRes String so we can reference it later!
 
-<p align="center">
-<img src= { leaderboards } width="30%" />
-</p>
+![Leaderboards](/images/play-games/configure-leaderboards.png)
 
 Configuring Achievements is even simpler. As I said previously, these are "level ups" for players. What is unique is, that as the play levels up in your game, Play games also levels them up in "XP", in that particular game's category! Achievements are quantified in terms of the points metric we spoke about previously. So, achievement-1 could be awarded when a user scores 50 points, achievement-2 awarded when a user scores 100 etc. To configure achievements, on Games services, just click on just click on “Add achievement”, give it an icon, description, XP points, whether it is visible to the user. Note, every achievement creates an achievement_id String. This needs to be added as a @StringRes String so we can reference it later!
 
-<p align="center">
-<img src= { achievements } width="30%" />
-</p>
+![Achievements](/images/play-games/configure-achievements.png)
 
 Now let's get back to the code! First of all, when we created the Game under Games services, it automatically created an app_id.
 We need to add this to our AndroidManifest.xml's metadata. We can use a @StringRes for the app_id String and reference it directly.
@@ -109,9 +89,7 @@ We need to add this to our AndroidManifest.xml's metadata. We can use a @StringR
 
 We now need to use the GoogleApiClient class. Please note that before doing this, its always a good idea to prompt the user that i.e. some users might not want to sign-in with their play games profile.
 
-<p align="center">
-<img src= { sign_in } width="30%" />
-</p>
+![Sign-in](/images/play-games/alert-to-sign-in.png)
 
 To configure GoogleApiClient, first we use the convenient Builder class. Once built, we can then run "connect()", on it.
 
