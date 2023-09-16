@@ -5,7 +5,7 @@ date:   2019-04-06 19:30 +1100
 categories: "blog"
 ---
 
-import video from './images/billing/strayamate-demo.webm';
+
 import in_app_products from './images/billing/in-app-products.png';
 import add_product from './images/billing/add-product.png';
 
@@ -176,8 +176,6 @@ Although, Android gives you some more convenience on top of this. You do not nee
 # Optimisation tips.
 It almost seems like you're going to have to follow the billing process twice. You're just better off using a `Singleton` instance of the `BillingClient`. If you're using a DI framework like the excellent [Dagger](https://google.github.io/dagger/), you're better off creating a `Singleton` component on your dependency graph and then injecting it as needed.
 
+# Demo
 
-<p align="center">
- <h2> Demo </h2>
- <video width="30%" controls autostart autoPlay src= { video } frameborder="0" allowfullscreen></video>
- </p>
+ <video width="300" autoplay loop muted  src="/images/billing/strayamate-demo.webm" frameborder="0" allowfullscreen></video>
