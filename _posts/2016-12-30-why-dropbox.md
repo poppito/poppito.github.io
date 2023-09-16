@@ -8,7 +8,7 @@ categories: "blog"
 # Why Dropbox?
 
 Well, it is official. I am killing the backend for my contact sync [app](https://play.google.com/store/apps/details?id=com.noni.embryio&hl=en). When I first built it, in early 2014, I was teaching myself to code both in Java and in Python.
-I had also just applied to get into an accelerator - unfortunately which I got rejected from. I then applied to be a part of Microsoft's [Bizspark](http://bizspark.com) program, and it kinda worked! I got in.
+I had also just applied to get into an accelerator - unfortunately which I got rejected from. I then applied to be a part of Microsoft's [Bizspark](https://bizspark.com) program, and it kinda worked! I got in.
 That was pretty rad because I got a lot of Windows Azure credit. Life was awesome. Unfortunately, and I didn't realise at that time but I was taking on too much. I was trying to learn stuff,
 I was working full time and I was building stuff that probably needed someone to work full time on. Eventually, I kinda ended up changing careers and taking quite a bit of a paycut so unfortunately I cannot keep funding Azure compute as it is a sizeable cost every month.
 
