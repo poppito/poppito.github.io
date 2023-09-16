@@ -5,8 +5,6 @@ date: 2022-03-17 21:30 +1100
 categories: 'blog'
 ---
 
-import fakeToken from './images/fake_token.png';
-
 # Invalidating unused Firebase push tokens using scheduled functions
 
 Push messaging in modern mobile apps with Firebase is really common. The usual workflow is:
@@ -138,16 +136,7 @@ return Promise.all(tokensToRemove);
 
 d) If you inspect the logs for your Firebase function
 
-<img src={fakeToken} width="50%" />
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+![Fake token](/images/fake_token.png)
 
 <p align="center">
     <h1>It just works! </h1>

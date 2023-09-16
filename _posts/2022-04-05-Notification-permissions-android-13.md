@@ -5,9 +5,6 @@ date: 2022-04-05 21:30 +1100
 categories: 'blog'
 ---
 
-import notificationPermissions from './images/notification_permissions.webm';
-import android13Icons from './images/android_13_icons.png'
-
 # Android 13 Preview 2
 
 Last weekend I finally got some time to have a play with the Android 13 emulator and I have to admit,
@@ -15,7 +12,7 @@ its a bit rough around the edges.
 
 For example all the icons in the launcher are humongo 😮
 
-<img src= { android13Icons } width="30%"/>
+![Android 13 icons](/images/android_13_icons.png)
 
 Anyway nothing ventured, nothing gained I figured.
 
@@ -63,7 +60,7 @@ unfortunately, checking for `SDK_INT >= 33` does not work currently, so I had to
         }
 ```
 
-<div align="center">
-<h3> Here's what it looks like 👌 </h3>
-    <video width="30%" controls autostart autoPlay src={ notificationPermissions } type="video/mp4" />
-</div>
+# Here's what it looks like 👌
+<p align="center">
+    <video width="320" controls autoplay loop muted src="/images/notification_permissions.webm" type="video/webm" />
+</p>
