@@ -45,10 +45,9 @@ Because this is a runtime permission, you also need to follow the general steps 
 - If it returns false, you can call `requestPermissions` for `POST_NOTIFICATIONS` directly.
 - If in the the permission rationale dialog, the user clicks the `positiveButton`, call `requestPermissions` for `POST_NOTIFICATIONS`.
 
-unfortunately, checking for `SDK_INT >= 33` does not work currently, so I had to make do with calling `SDK_INT >= 32` instead.
 
 ```
-        if (Build.VERSION.SDK_INT >= 32) {
+        if (Build.VERSION.SDK_INT >= 33) {
             String[] permission = {POST_NOTIFICATIONS};
             if (checkSelfPermission(POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
                 if (!shouldShowRequestPermissionRationale(POST_NOTIFICATIONS)) {
@@ -62,5 +61,5 @@ unfortunately, checking for `SDK_INT >= 33` does not work currently, so I had to
 
 # Here's what it looks like 👌
 <p align="center">
-    <video width="320" controls autoplay loop muted src="/images/notification_permissions.webm" type="video/webm" />
+    <video width="320" source src="/images/notification_permissions.webm" autoplay loop muted type="video/webm" />
 </p>
