@@ -177,4 +177,4 @@ That's right. For foreground services, if the user stops showing notifications, 
 service and its processing still seems to be working as normal
 
 
-<img src="https://media.giphy.com/media/aLdiZJmmx4OVW/giphy.gif" />
+<img alt="Well done." src="https://media.giphy.com/media/aLdiZJmmx4OVW/giphy.gif" />

@@ -140,5 +140,5 @@ d) If you inspect the logs for your Firebase function
 
 <p align="center">
     <h1>It just works! </h1>
-  <img src="https://media.giphy.com/media/3oEjI5VtIhHvK37WYo/giphy.gif" />
+  <img src="https://media.giphy.com/media/3oEjI5VtIhHvK37WYo/giphy.gif" alt="Nice one" />
 </p>
