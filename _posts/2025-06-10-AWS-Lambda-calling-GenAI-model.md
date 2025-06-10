@@ -64,7 +64,7 @@ Remember when we unpacked `cross-region inference` above? Well, that's really wh
 
 # Lambda configuration
 
-Before we get started here, let's talk about multimodality aspect of this model again. The `Nova lite` model supports Gen AI transforms on text, images and videos. What I found super perplexing is that the official doco on the BedRock page (screenshot below) completely missed the image and video part of the [request body](https://ap-southeast-2.console.aws.amazon.com/bedrock/home?region=ap-southeast-2#/model-catalog/serverless/amazon.nova-lite-v1:0) (see this link, its missing the `photo` and `video` data objects completely as of writing this post in June 2025).
+Before we get started here, let's talk about the multimodality aspect of this model again. The `Nova lite` model supports Gen AI transforms on text, images and videos. What I found super perplexing is that the official doco on the BedRock page (screenshot below) completely missed the image and video part of the [request body](https://ap-southeast-2.console.aws.amazon.com/bedrock/home?region=ap-southeast-2#/model-catalog/serverless/amazon.nova-lite-v1:0) (see this link, its missing the `photo` and `video` data objects completely as of writing this post in June 2025).
 
 No matter as AWS doco is really quite impeccable, the trick is to keep looking. The [complete schema](https://docs.aws.amazon.com/nova/latest/userguide/complete-request-schema.html) takes care of this issue. The interesting part here is that you can provide a `base-64` encoded `byte array` of the photo or video or you can even upload the video separately to an `s3` bucket and give lambda bucket policy permissions to its service role. There is nothing else extra needed on top.
 
