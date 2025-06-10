@@ -28,7 +28,7 @@ To get started with enabling this model:
 
 3) This will open up the `Edit Model Access` window > Tap on next > then submit.
 
-3) In my case it took about 5 minutes for the model to be available in Bedrock.
+4) In my case it took about 5 minutes for the model to be available in Bedrock.
 
 Curiously, I noticed that when you request access to Anthropic models, a use-case justification needs to be provided 🤔
 
