@@ -60,7 +60,7 @@ We'll go through our lambda configuration in a tick, however we need to give Lam
 }
 ```
 
-Remember when we unpacked "cross-region inference" above? Well, that's really why we need two ARNs in our lambda service role. One is to call the foundation model across multiple regions ("the cross region") part, and the other to make the call through to the inference profile. Getting my head around the nuances of why we need both was probably the most challenging part of building this app.
+Remember when we unpacked `cross-region inference` above? Well, that's really why we need two ARNs in our lambda service role. One is to call the foundation model across multiple regions ("the cross region") part, and the other to make the call through to the inference profile. Getting my head around the nuances of why we need both was probably the most challenging part of building this app.
 
 # Lambda configuration
 
@@ -137,8 +137,11 @@ def lambda_handler(event, context):
 While the doco does a really good job of unpacking exactly what's required in the `requestBody`:
 
 1) Once we have our `boto3` client calling the `bedrock runtime` service, we define our system prompt.
+
 2) As you can guess, this app detects customer sentiment and extracts any actionable feedback for my (hypothetical) boutique french bakery in Melbourne. The initial `prompt` object is in fact the system prompt.
-3) the `text` content is the actual feedback that the lambda receives from its calling API. 
+
+3) The `text` content is the actual feedback that the lambda receives from its calling API.
+
 4) Once invoked, the model returns a `response_body` with a `message` content ie. answer.
 
 
