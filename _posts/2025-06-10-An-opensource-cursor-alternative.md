@@ -89,7 +89,7 @@ To install:
 # Step 4: Configuring RooCode to work with Ollama
 Once installed, open the RooCode settings and point it to your local Ollama endpoint (usually `http://localhost:11434`).
 
-<img src="/images/ollama_roocode/ollama_config_vs_code.png" src="ollama config for roo code" width=400>
+<img src="/images/ollama_roocode/ollama_config_vs_code.png" alt="ollama config for roo code" width=400>
 
 In fact, Roocode should present you with options to select each model.
 
@@ -124,7 +124,7 @@ Ok, let's ask it a question to begin with. I selected the `deepseek-r1:latest` m
 
 I asked it: `Write me a haiku about techdebt`
 
-<img src="/images/ollama_roocode/haiku.png" src="A haiku about tech debt" width=500>
+<img src="/images/ollama_roocode/haiku.png" alt="A haiku about tech debt" width=500>
 
 
 Hmm, let's create a new custom mode. This time we'll focus on a `full stack software engineer`
