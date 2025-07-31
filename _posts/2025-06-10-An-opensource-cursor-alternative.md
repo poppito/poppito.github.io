@@ -59,7 +59,7 @@ brew services stop ollama
 Ollama supports a bunch of open models. Here’s a quick review of three you should try:
 
 - **llama3.2**: Meta’s latest (currently, as of july 2025), surprisingly fast on Apple Silicon, and great for general-purpose coding and chat. Handles context well and doesn’t hallucinate as much as earlier versions.
-- **deepseek-coder-r1**: If you’re after code generation, Deepseek’s R1 is a beast. It’s trained specifically for code and does the job with multi-file reasoning, docstrings etc.
+- **deepseek-r1**: If you’re after code generation, Deepseek’s R1 is a beast. It’s trained specifically for code and does the job with multi-file reasoning and code generation across a variety of languages and frameworks.
 - **gemma-3b**: Google’s Gemma is lightweight and snappy, perfect for quick tasks or running on lower-spec hardware. Not as “smart” as the others, but it’s fast and resource-friendly.
 
 To pull these models, just run:
@@ -116,9 +116,6 @@ Here the `slug` is an identifier unique to this particular `customMode`, the nam
 Btw, I know nothing about literature so I hope this works.
 
 Let's ask it to `write a haiku about tech debt and make compelling arguments advocating against it`
-
-
-# Step 6: Test out your setup
 
 Ok, let's ask it a question to begin with. I selected the `deepseek-r1:latest` model (which in effect is the `deepseek-r1:8b` at the time of writing this post)
 
