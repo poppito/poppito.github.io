@@ -115,13 +115,11 @@ Here the `slug` is an identifier unique to this particular `customMode`, the nam
 
 Btw, I know nothing about literature so I hope this works.
 
-Let's ask it to `write a haiku about tech debt and make compelling arguments advocating against it`
-
-Ok, let's ask it a question to begin with. I selected the `deepseek-r1:latest` model (which in effect is the `deepseek-r1:8b` at the time of writing this post)
-
-I asked it: `Write me a haiku about techdebt`
+Ok, let's ask it a question to begin with. I selected the `deepseek-r1:latest` model (which in effect is the `deepseek-r1:8b` at the time of writing this post) and asked it: `Write me a haiku about techdebt`
 
 <img src="/images/ollama_roocode/haiku.png" alt="A haiku about tech debt" width=500>
+
+I'll take it!
 
 
 Hmm, let's create a new custom mode. This time we'll focus on a `full stack software engineer`
