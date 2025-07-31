@@ -13,7 +13,7 @@ Its probably safe to say that AI assisted coding is not going away any time soon
 
 What motivated me to write this post? My heavy use of Copilot with the free version of Github got capped. One saturday afternoon, the dreaded message from Copilot finally popped up.
 
-<img src="/images/ollama_roocode/copilot_limit.png" width=400>
+<img src="/images/ollama_roocode/copilot_limit.png" alt="Copilot warning that my premium limit has been reached!" width=400>
 
 This got me thinking, is there a way to run a completely local set of LLMs with opensourced models? There's several ways! This post unpacks my current setup at home in July 2025.
 
@@ -89,7 +89,7 @@ To install:
 # Step 4: Configuring RooCode to work with Ollama
 Once installed, open the RooCode settings and point it to your local Ollama endpoint (usually `http://localhost:11434`).
 
-<img src="/images/ollama_roocode/ollama_config_vs_code.png" width=400>
+<img src="/images/ollama_roocode/ollama_config_vs_code.png" src="ollama config for roo code" width=400>
 
 In fact, Roocode should present you with options to select each model.
 
@@ -124,7 +124,7 @@ Ok, let's ask it a question to begin with. I selected the `deepseek-r1:latest` m
 
 I asked it: `Write me a haiku about techdebt`
 
-<img src="/images/ollama_roocode/haiku.png" width=500>
+<img src="/images/ollama_roocode/haiku.png" src="A haiku about tech debt" width=500>
 
 
 Hmm, let's create a new custom mode. This time we'll focus on a `full stack software engineer`
@@ -148,7 +148,7 @@ Hmm, let's create a new custom mode. This time we'll focus on a `full stack soft
 
 Let's try the prompt `Explain React.js side-effects to me like I am 10 years old`
 
-<img src="/images/ollama_roocode/react_side_effects.png" width=400>
+<img src="/images/ollama_roocode/react_side_effects.png" alt="react side effects like i am 10 years old" width=400>
 
 
 What about someting more involved? How about: 
@@ -160,7 +160,7 @@ What about someting more involved? How about:
 - how to run the app locally
 ```
 
-<img src="/images/ollama_roocode/react_app.png" width=400>
+<img src="/images/ollama_roocode/react_app.png" alt="creating a react app locally from scratch" width=400>
 
 ---
 
