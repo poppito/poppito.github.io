@@ -54,7 +54,7 @@ This will pull the model if it doesn't already exist and then run it too.
 
 You can clone the project at
 
-Your setup should look like this
+Your setup should look like this:
 
 ```markdown
 RAG/
@@ -64,6 +64,8 @@ RAG/
     ├── document1.txt
     └── document2.pdf
 ```
+
+The top level directory/folder can be whatever you want to call it. As long as you've installed the dependencies above, you can plonk the script below into the root of the folder. The `data` directory is where the script reads any text formatted data from to create the embeddings. Once the script is run, it will create `index_storage` where the embeddings are stored. 
 
 ## Code Breakdown
 Below is the core script. It will:
@@ -112,6 +114,7 @@ def persist_index():
         return index
 
 # Start a loop to create a chat to query LLM for semantic search using RAG
+# You should be able to adjust the similarity_top_k depending on how your embeddings perform
 def run_query(index):
     query_engine = index.as_query_engine(similarity_top_k=5)
     print("Type your query or 'exit' to quit")
@@ -136,16 +139,18 @@ if __name__ == "__main__":
 ```
 
 ## How It Works
-a. Creating Embeddings & Indexing
-The script loads all files from the data/ directory.
-Each file is read and converted into a document with metadata (the filename).
-Embeddings are created using the HuggingFace model.
-The vector index is persisted to disk (index_storage/), so you don't need to re-embed every time.
-b. Querying with Llama3.2
-The script loads the index from disk (if it exists).
-You can type questions in the terminal.
-The system retrieves relevant documents using vector search and passes them to the Llama3.2 model running locally via Ollama.
-The answer is shown, along with citations (the filenames of the source documents).
+
+- Creating Embeddings & Indexing
+  The script loads all files from the data/ directory.
+  Each file is read and converted into a document with metadata (the filename).
+  Embeddings are created using the HuggingFace model.
+  The vector index is persisted to disk in `./index_storage/`, so you don't need to re-embed every time. I could have made it more sophisticated by storing a hash of which files are indexed so every time the script is run, we check whether a new file is added or not, as currently you need to delete the entire embeddings directory whenever a new file is added.
+
+- Querying with Llama3.2
+  The script loads the index from disk (if it exists).
+  You can type questions in the terminal.
+  The system retrieves relevant documents using vector search and passes them to the Llama3.2 model running locally via Ollama.
+  The answer is shown, along with citations (the filenames of the source documents).
 
 ## Example Usage
 
@@ -164,4 +169,5 @@ The answer is shown, along with citations (the filenames of the source documents
 
 
 ## Conclusion
+
 With this setup, you have a fully local, privacy-preserving Q&A system over your own documents, powered by state-of-the-art open-source LLMs and embeddings. You can extend this further with a web or mobile UI, support for more file types, or advanced citation formatting.
