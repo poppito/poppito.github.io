@@ -148,7 +148,7 @@ The answer is shown, along with citations (the filenames of the source documents
 ## Example Usage
 
 ```bash
-  $ python3 [script.py](http://_vscodecontentref_/1)
+  $ python3 script.py
   indexing ./data/document1.txt #this can be any txt doc
   indexing ./data/document2.pdf #this can be any pdf doc
   Type your query or 'exit' to quit
