@@ -1,7 +1,7 @@
 ---
 slug: "2025-07-29-OpenSource-RAG-with-llamaindex-ollama"
 title:  "RAGs to riches (of information)"
-date:   2025-07-29 09:00 +1100
+date:   2025-08-08 09:00 +1100
 categories: "blog"
 ---
 
@@ -17,7 +17,7 @@ In this guide, we'll build a local RAG system with 100% open source components a
 
 - We'll be running our setup on a Mac with HomeBrew installed on your machine
 - Python 3.9+
-- [Ollama](https://ollama.com/) installed and Llama3.2 model pulled
+- Ollama installed and Llama3.2 model pulled
 - Required Python libraries:
   ```bash
   pip install llama-index llama-index-llms-ollama llama-index-embeddings-huggingface torch transformers
