@@ -1,7 +1,7 @@
 ---
-slug: "2025-07-29-OpenSource-RAG-with-llamaindex-ollama"
+slug: "2025-08-08-OpenSource-RAG-with-llamaindex-ollama"
 title:  "RAGs to riches (of information)"
-date:   2025-08-08 09:00 +1100
+date:   2025-08-08 06:00 +1100
 categories: "blog"
 ---
 
