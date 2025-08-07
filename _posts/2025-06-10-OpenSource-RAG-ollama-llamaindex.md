@@ -148,26 +148,18 @@ The answer is shown, along with citations (the filenames of the source documents
 ## Example Usage
 
 ```bash
-$ python [script.py](http://_vscodecontentref_/1)
-indexing ./data/document1.txt #this can be any txt doc
-indexing ./data/document2.pdf #this can be any pdf doc
-Type your query or 'exit' to quit
-> What is the summary of document1?
-Response:
-[LLM-generated answer]
+  $ python3 [script.py](http://_vscodecontentref_/1)
+  indexing ./data/document1.txt #this can be any txt doc
+  indexing ./data/document2.pdf #this can be any pdf doc
+  Type your query or 'exit' to quit
+  > What is the summary of document1?
+  Response:
+  [LLM-generated answer]
 
-Citations:
-- document1.txt
+  Citations:
+  - document1.txt
 ```
 
-## Tips & Troubleshooting
-If you see no citations, ensure your documents are not empty and your queries match the content.
-You can adjust similarity_top_k in as_query_engine() to retrieve more sources.
-For PDF and image support, you may need to install additional dependencies and use specialized readers.
 
-
-# Conclusion
+## Conclusion
 With this setup, you have a fully local, privacy-preserving Q&A system over your own documents, powered by state-of-the-art open-source LLMs and embeddings. You can extend this further with a web or mobile UI, support for more file types, or advanced citation formatting.
-
-Happy hacking!
-
