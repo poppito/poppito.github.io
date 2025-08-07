@@ -56,12 +56,14 @@ You can clone the project at
 
 Your setup should look like this
 
+```markdown
 RAG/
-├── [script.py]()
+├── script.py
 ├── index_storage/
 └── data/
     ├── document1.txt
     └── document2.pdf
+```
 
 ## Code Breakdown
 Below is the core script. It will:
