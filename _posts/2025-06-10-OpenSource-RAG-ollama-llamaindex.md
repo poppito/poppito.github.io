@@ -52,8 +52,6 @@ This will pull the model if it doesn't already exist and then run it too.
 
 ## Setup
 
-You can clone the project at
-
 Your setup should look like this:
 
 ```markdown
