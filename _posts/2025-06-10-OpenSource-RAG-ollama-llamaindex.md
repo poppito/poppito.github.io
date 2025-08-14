@@ -9,7 +9,7 @@ categories: "blog"
 
 LLMs are great at generalised information, however retrieval augmented generation takes it a step further by localising the way LLMs return information by adding an extra layer of embeddings that they can call to answer questions or run searches.
 
-In this guide, we'll build a local RAG system with 100% open source components and run it completely locally using [LlamaIndex](https://github.com/run-llama/llama_index) for document indexing and retrieval, [HuggingFace embeddings](https://huggingface.co/) for semantic search, and [Ollama](https://ollama.com/) to run the Llama3.2 model.
+In this guide, we'll build a local RAG system with 100% open source components and run it completely locally using [LlamaIndex](https://github.com/run-llama/llama_index) for document indexing and retrieval, [HuggingFace embeddings](https://huggingface.co/) for semantic search, and [Ollama](https://ollama.com/) to run the Llama3.2 model. To ensure we are working with reliable sources and we're referencing the data we've provided this model and that the model doesn't hallucinate, we'll also use citations.
 
 ---
 
@@ -166,6 +166,8 @@ if __name__ == "__main__":
 ```
 
 
-## Conclusion
+## Github Repo
+To see this in action, I've open sourced the code in this [github repository](https://github.com/poppito/ai-experiments/tree/main/rag) and used two of my favourite children's books from [Project Gutenberg](https://www.gutenberg.org)
+
 
 With this setup, you have a fully local, privacy-preserving Q&A system over your own documents, powered by state-of-the-art open-source LLMs and embeddings. You can extend this further with a web or mobile UI, support for more file types, or advanced citation formatting.
