@@ -166,8 +166,12 @@ if __name__ == "__main__":
 ```
 
 
-## Github Repo
+## Github Repo and preview
 To see this in action, I've open sourced the code in this [github repository](https://github.com/poppito/ai-experiments/tree/main/rag) and used two of my favourite children's books from [Project Gutenberg](https://www.gutenberg.org)
 
 
 With this setup, you have a fully local, privacy-preserving Q&A system over your own documents, powered by state-of-the-art open-source LLMs and embeddings. You can extend this further with a web or mobile UI, support for more file types, or advanced citation formatting.
+
+## Preview
+
+![](https://github.com/user-attachments/assets/9cedff4b-3c7b-4569-bec3-4c6184ae8e66)
