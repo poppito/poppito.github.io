@@ -174,4 +174,4 @@ With this setup, you have a fully local, privacy-preserving Q&A system over your
 
 ## Preview
 
-![](https://github.com/user-attachments/assets/9cedff4b-3c7b-4569-bec3-4c6184ae8e66.mp4)
+![](https://github.com/user-attachments/assets/9cedff4b-3c7b-4569-bec3-4c6184ae8e66)
