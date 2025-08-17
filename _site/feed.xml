@@ -1,0 +1,215 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>Harsh Overseer</title>
+  <subtitle></subtitle>
+  <updated>2025-08-16T21:09:22+10:00</updated>
+  <author>
+    <name>Harsh Overseer</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2025 Harsh Overseer </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>RAGs to riches (of information)</title>
+    <link href="http://localhost:4000/posts/2025-08-08-OpenSource-RAG-with-llamaindex-ollama/" rel="alternate" type="text/html" title="RAGs to riches (of information)" />
+    <published>2025-08-08T05:00:00+10:00</published>
+  
+    <updated>2025-08-15T20:36:13+10:00</updated>
+  
+    <id>http://localhost:4000/posts/2025-08-08-OpenSource-RAG-with-llamaindex-ollama/</id>
+    <content src="http://localhost:4000/posts/2025-08-08-OpenSource-RAG-with-llamaindex-ollama/" />
+    <author>
+      <name>Harsh Overseer</name>
+    </author>
+
+  
+    
+    <category term="blog" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      RAG (Retrieval augmented generation)
+
+LLMs are great at generalised information, however retrieval augmented generation takes it a step further by localising the way LLMs return information by adding an extra layer of embeddings that they can call to answer questions or run searches.
+
+In this guide, we’ll build a local RAG system with 100% open source components and run it completely locally us...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>An Open Source Copilot Alternative</title>
+    <link href="http://localhost:4000/posts/2025-07-29-OpenSource-Cursor-Alternative/" rel="alternate" type="text/html" title="An Open Source Copilot Alternative" />
+    <published>2025-07-29T08:00:00+10:00</published>
+  
+    <updated>2025-08-01T08:57:24+10:00</updated>
+  
+    <id>http://localhost:4000/posts/2025-07-29-OpenSource-Cursor-Alternative/</id>
+    <content src="http://localhost:4000/posts/2025-07-29-OpenSource-Cursor-Alternative/" />
+    <author>
+      <name>Harsh Overseer</name>
+    </author>
+
+  
+    
+    <category term="blog" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      The best engineers I’ve worked with in my career are builders, tinkerers, experimenters and lifelong learners. This affords them to not only be the best at their jobs and be large repositories of knowledge, but also makes them rounded, tech agnostic and enables them to apply nuance when it comes to building things.
+
+Its probably safe to say that AI assisted coding is not going away any time soo...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Building a serverless GenAI app with Nova foundation models and AWS Lambda</title>
+    <link href="http://localhost:4000/posts/2025-06-10-Building-AWS-Lambda-with-Nova-Lite/" rel="alternate" type="text/html" title="Building a serverless GenAI app with Nova foundation models and AWS Lambda" />
+    <published>2025-06-10T09:00:00+10:00</published>
+  
+    <updated>2025-06-10T09:00:00+10:00</updated>
+  
+    <id>http://localhost:4000/posts/2025-06-10-Building-AWS-Lambda-with-Nova-Lite/</id>
+    <content src="http://localhost:4000/posts/2025-06-10-Building-AWS-Lambda-with-Nova-Lite/" />
+    <author>
+      <name>Harsh Overseer</name>
+    </author>
+
+  
+    
+    <category term="blog" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Nova foundation models
+
+Amazon recently introduced Nova Foundation Models as a part of Amazon Bedrock (a managed solution to build applications with foundational models). The great thing about these models is that they balance cost-effectiveness vs accuracy/performance really quite well - text, multimodality (models that can work with text, photos or videos including photo and video generation)...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Prototyping Gemini pro on mobile</title>
+    <link href="http://localhost:4000/posts/2023-10-13-Prototyping-gemini-pro-on-mobile/" rel="alternate" type="text/html" title="Prototyping Gemini pro on mobile" />
+    <published>2023-12-21T10:30:00+11:00</published>
+  
+    <updated>2023-12-21T10:30:00+11:00</updated>
+  
+    <id>http://localhost:4000/posts/2023-10-13-Prototyping-gemini-pro-on-mobile/</id>
+    <content src="http://localhost:4000/posts/2023-10-13-Prototyping-gemini-pro-on-mobile/" />
+    <author>
+      <name>Harsh Overseer</name>
+    </author>
+
+  
+    
+    <category term="blog" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Last thursday, Google released early versions of Gemini Pro - their generative AI APIs and I created a quick iOS prototype app to test our their vision models 👀
+
+I do deeply care about making good, accessible apps so apart from obvious banking/ fintech usecases, I think there is a lot of potential for it in a11y usecases 🚀
+
+
+  
+    I gave it a photo of a receipt for a lunch we had in our team a...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Reflections on the architectural approach for my first generative AI app.</title>
+    <link href="http://localhost:4000/posts/2023-10-13-Reflections-on-architecture-generative-AI/" rel="alternate" type="text/html" title="Reflections on the architectural approach for my first generative AI app." />
+    <published>2023-10-13T10:30:00+11:00</published>
+  
+    <updated>2023-10-13T10:30:00+11:00</updated>
+  
+    <id>http://localhost:4000/posts/2023-10-13-Reflections-on-architecture-generative-AI/</id>
+    <content src="http://localhost:4000/posts/2023-10-13-Reflections-on-architecture-generative-AI/" />
+    <author>
+      <name>Harsh Overseer</name>
+    </author>
+
+  
+    
+    <category term="blog" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      User safety above all else.
+
+Some reflections on the architecture of shipping my first ever generative API + writing a backend for it:
+
+1) User safety above all else. Generative AI is awful as far as bias is concerned. The API I chose allows tweaking the safety settings for every endpoint ☢️
+
+More info
+
+2) Prompt engineering is real! cURL to the rescue. But wrapping user interaction calls in my...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
