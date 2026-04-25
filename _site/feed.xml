@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Harsh Overseer</title>
   <subtitle></subtitle>
-  <updated>2025-08-16T21:09:22+10:00</updated>
+  <updated>2026-04-25T18:55:16+10:00</updated>
   <author>
     <name>Harsh Overseer</name>
     <uri>http://localhost:4000/</uri>
@@ -13,7 +13,7 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2025 Harsh Overseer </rights>
+  <rights> © 2026 Harsh Overseer </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
